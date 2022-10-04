@@ -1,6 +1,5 @@
-# ask for the devcontainer definition folder name
-echo "Enter the devcontainer definition folder name:"
-read folder
+# get first numeric arg and store in folder var
+folder=$1
 
 # create local .devcontainer folder
 mkdir .devcontainer
