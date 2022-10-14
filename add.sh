@@ -15,11 +15,8 @@ files=(Dockerfile devcontainer.json docker-compose.yml)
 for file in "${files[@]}"
 do
     curl -o .devcontainer/$file https://raw.githubusercontent.com/devidw/devcontainers/master/$folder/.devcontainer/$file
-done
 
-# delte those files with "404: Not Found" content
-for file in "${files[@]}"
-do
+    # delte those files with "404: Not Found" content
     if grep -q "404: Not Found" .devcontainer/$file; then
         rm .devcontainer/$file
     fi
