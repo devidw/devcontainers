@@ -1,4 +1,4 @@
 [source,console]
 ----
-curl -s https://cdn.jsdelivr.net/gh/devidw/devcontainers/add.sh | bash -s <devcontainer-name>
+curl -s https://raw.githubusercontent.com/devidw/devcontainers/master/add.sh | bash -s <devcontainer-name>
 ----
