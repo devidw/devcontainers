@@ -1,0 +1,32 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "wordpress",
+  "workspaceFolder": "/var/www/html/wp-content/plugins/plugin-dev",
+  "containerEnv": {
+    "NODE_ENV": "development"
+  },
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "php.validate.executablePath": "/usr/local/bin/php"
+      },
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "xdebug.php-debug",
+        "bmewburn.vscode-intelephense-client",
+        "mrmlnc.vscode-apache",
+        "dbaeumer.vscode-eslint",
+        "sysoev.language-stylus",
+        "GitHub.copilot",
+        "GitHub.copilot-labs",
+        "cschleiden.vscode-github-actions",
+        "michaelcurrin.auto-commit-msg",
+        "asciidoctor.asciidoctor-vscode",
+        "ms-vscode.makefile-tools",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
