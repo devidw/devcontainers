@@ -5,6 +5,7 @@
   "containerEnv": {
     "NODE_ENV": "development"
   },
+  "postCreateCommand": "composer install && pnpm install",
   "customizations": {
     "vscode": {
       "settings": {
