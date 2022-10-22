@@ -3,7 +3,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"JuanBlanco.solidity"
+				"JuanBlanco.solidity",
+				"bungcip.better-toml"
 			]
 		}
 	}
