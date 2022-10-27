@@ -1,4 +1,3 @@
 FROM node:latest
 
-# Install pnpm
-RUN npm install -g pnpm
+RUN corepack enable
