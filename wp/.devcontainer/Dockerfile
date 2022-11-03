@@ -10,5 +10,5 @@ COPY --from=composer/composer /usr/bin/composer /usr/bin/composer
 RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - \
   && apt-get install -y nodejs
 
-# pnpm
-RUN npm install -g pnpm
+# to be able to use pnpm
+RUN corepack enable
